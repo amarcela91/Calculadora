@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    display: flex;
+    background-color: darkseagreen;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;   
+}
+
+.calculadora {
+    padding: 2% 2% 1% 2%;  
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    background-color: dimgrey;            
+    
+}
+
+.tablero {
+    
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
+
+.teclado {
+    display: flex;
+    padding: 12px 0;
+    flex-direction: column;      
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;   
+}
+
+.row {
+    padding: 4px 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ .tecla {
+     width: 23%;
+     font-size:xx-large;
+     border: none; 
+ }
+
+ .especial {
+    width: 48%;
+    background: orange;
+    color: white;
+ }
+
+
