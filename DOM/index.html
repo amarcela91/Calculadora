@@ -9,33 +9,36 @@
 </head>
 <body> 
     <section class="calculadora">        
-        <input class="tablero"></input>               
+        <input id="tablero" class="tablero"></input>               
         <section class= "teclado">            
             <div class="row">
-                <button class = "tecla">7</button>
-                <button class = "tecla">8</button>
-                <button class = "tecla">9</button>
-                <button class = "tecla">/</button>
+                <button class = "tecla" onclick="add('7')">7</button>
+                <button class = "tecla" onclick="add('8')">8</button>
+                <button class = "tecla" onclick="add('9')">9</button>
+                <button class = "tecla operacion" onclick="add('/')">/</button>
             </div>            
             <div class="row">
-                <button class = "tecla">4</button>
-                <button class = "tecla">5</button>
-                <button class = "tecla">6</button>
-                <button class = "tecla">x</button>
+                <button class = "tecla" onclick="add('4')">4</button>
+                <button class = "tecla" onclick="add('5')">5</button>
+                <button class = "tecla" onclick="add('6')">6</button>
+                <button class = "tecla operacion"  onclick="add('*')">x</button>
             </div>
             <div class="row">
-                <button class = "tecla">1</button>
-                <button class = "tecla">2</button>
-                <button class = "tecla">3</button>
-                <button class = "tecla">-</button>
+                <button class = "tecla" onclick="add('1')">1</button>
+                <button class = "tecla" onclick="add('2')">2</button>
+                <button class = "tecla" onclick="add('3')">3</button>
+                <button class = "tecla operacion" onclick="add('-')">-</button>
             </div>
             <div class="row">
-                <button class = "tecla">0</button>
-                <button class = "tecla especial">=</button>
-                <button class = "tecla">+</button>
+                <button class = "tecla" onclick="add('0')">0</button>
+                <button class = "tecla especial" onclick="calc()">=</button>
+                <button class = "tecla operacion" onclick="add('+')">+</button>
+            </div>
+            <div class="row">
+                <button class = "tecla borrado" onclick="del()">Borrar</button>
             </div>             
         </section>        
     </section>   
 </body>
-<!-- <script src="./index.js"></script>-->
+<script src="./index.js"></script>
 </html>
