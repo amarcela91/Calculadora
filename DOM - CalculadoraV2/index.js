@@ -168,7 +168,8 @@ var cero = document.getElementById('cero');
             tablero.textContent = res;
             haySigno = true;              
         }else {
-            tablero.textContent = "Imposible realizar la operación";              
+            tablero.textContent = "Imposible realizar la operación";
+            haySigno = true;              
         }        
              
         
